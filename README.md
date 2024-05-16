@@ -61,10 +61,28 @@ Since NSA3182FT180's pin5 is connected to R9, it is easier to soldering a wire o
 ---
 
 ## Flash firmware on the Grove Vision AI Module v2 (WE2)
+To simplify the demonstration, we utilize a pre-trained pet detection model on the Grove Vision AI Module v2. 
+Visit https://seeed-studio.github.io/SenseCraft-Web-Toolkit/#/setup/process, connect the ‘Grove Vision AI (V2)’, select the ‘Pet Detection’ model, and click the ‘Send’ button in your browser. This action will flash the Pet Detection model onto the Grove Vision AI Module v2.
+[![SenseCraft-pet-detection](/doc/image/SenseCraft-pet-detection.png)](https://github.com/teamprof/github-we2-doorbell/blob/main/doc/images/SenseCraft-pet-detection.png)
+
 
 ## Build and Flash firmware on XIAO ESP32C3
+1. Clone this repository by "git clone https://github.com/teamprof/github-we2-doorbell"
+2. Follow the instruction on "https://www.callmebot.com/blog/free-api-whatsapp-messages/" to get the APIKEY.
+3. Replace the "<MobileNumber>" and "<ApiKey>" values with your mobile number and the APIKEY got on step 2 in "secret.h".
+4. Replace the "<YourWifiSsid>" and "<YourWifiPassword>" in "secret.h"
+5. Build and upload the firmware in Arduino IDE.
+
 
 ## Run the demo
+**DO NOT connect USB cable to both XIAO ESP32C3 and Grove Vision AI Module v2 (WE2) simultaneously. Otherwise, board(s) MAY be permanently damage!**
+1. Connect a USB cable between XIAO ESP32C3 and PC
+2. Launch a Serial terminal, set baud rate to 115200 and connect it to the USB port of the XIAO ESP32C3 Board  
+3. Press the RESET button on XIAO ESP32C3 
+4. If everything goes smooth, you should see the followings on the serial terminal:
+[![serial terminal screen](/doc/image/serial-terminal.png)](https://github.com/teamprof/github-we2-doorbell/blob/main/doc/image/serial-terminal.png)
+5. Put a "cat" in front of the camera/PIR, the PIR lamp turns on, the Grove Vision AI Module v2 starts inference. If everything works smoothly, a whatsapp message with "tenant" will be received on the mobile phone in couples of seconds.
+6. Put a "dog" in front of the camera/PIR, the PIR lamp turns on, the Grove Vision AI Module v2 starts inference. If everything works smoothly, a whatsapp message with "stranger" will be received on the mobile phone in couples of seconds.
 
 ## Demo
 
