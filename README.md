@@ -71,7 +71,9 @@ Visit https://seeed-studio.github.io/SenseCraft-Web-Toolkit/#/setup/process, con
 2. Follow the instruction on "https://www.callmebot.com/blog/free-api-whatsapp-messages/" to get the APIKEY.
 3. Replace the "<MobileNumber>" and "<ApiKey>" values with your mobile number and the APIKEY got on step 2 in "secret.h".
 4. Replace the "<YourWifiSsid>" and "<YourWifiPassword>" in "secret.h"
-5. Build and upload the firmware in Arduino IDE.
+5. Build and upload the firmware in Arduino IDE.  
+   If everything goes smooth, you should see the followings on the Arduino IDE Output:
+[![upload screen](/doc/image/upload.png)](https://github.com/teamprof/github-we2-doorbell/blob/main/doc/image/upload.png)
 
 
 ## Run the demo
@@ -80,11 +82,14 @@ Visit https://seeed-studio.github.io/SenseCraft-Web-Toolkit/#/setup/process, con
 2. Launch a Serial terminal, set baud rate to 115200 and connect it to the USB port of the XIAO ESP32C3 Board  
 3. Press the RESET button on XIAO ESP32C3 
 4. If everything goes smooth, you should see the followings on the serial terminal:
-[![serial terminal screen](/doc/image/serial-terminal.png)](https://github.com/teamprof/github-we2-doorbell/blob/main/doc/image/serial-terminal.png)
-5. Put a "cat" in front of the camera/PIR, the PIR lamp turns on, the Grove Vision AI Module v2 starts inference. If everything works smoothly, a whatsapp message with "tenant" will be received on the mobile phone in couples of seconds.
-6. Put a "dog" in front of the camera/PIR, the PIR lamp turns on, the Grove Vision AI Module v2 starts inference. If everything works smoothly, a whatsapp message with "stranger" will be received on the mobile phone in couples of seconds.
+[![bootup screen](/doc/image/bootup.png)](https://github.com/teamprof/github-we2-doorbell/blob/main/doc/image/bootup.png)
+5. Put a "cat" in front of the camera/PIR, the PIR lamp turns on, the Grove Vision AI Module v2 starts inference. If everything works smoothly, a whatsapp message with "tenant" will be received on the mobile phone in couples of seconds.  
+   [![whatsapp tenant screen](/doc/image/whatsapp-tenant.jpg)](https://github.com/teamprof/github-we2-doorbell/blob/main/doc/image/whatsapp-tenant.jpg)
+6. Put a "dog" in front of the camera/PIR, the PIR lamp turns on, the Grove Vision AI Module v2 starts inference. If everything works smoothly, a whatsapp message with "stranger" will be received on the mobile phone in couples of seconds.  
+   [![whatsapp stranger screen](/doc/image/whatsapp-stranger.jpg)](https://github.com/teamprof/github-we2-doorbell/blob/main/doc/image/whatsapp-stranger.jpg)
 
 ## Demo
+Video demo is available on [we2-doorbell video](https://www.youtube.com/watch?v=cL3YblVXM7Y)  
 
 
 
