@@ -69,8 +69,8 @@ Visit https://seeed-studio.github.io/SenseCraft-Web-Toolkit/#/setup/process, con
 ## Build and Flash firmware on XIAO ESP32C3
 1. Clone this repository by "git clone https://github.com/teamprof/github-we2-doorbell"
 2. Follow the instruction on "https://www.callmebot.com/blog/free-api-whatsapp-messages/" to get the APIKEY.
-3. Replace the "<MobileNumber>" and "<ApiKey>" values with your mobile number and the APIKEY got on step 2 in "secret.h".
-4. Replace the "<YourWifiSsid>" and "<YourWifiPassword>" in "secret.h"
+3. Replace the "\<MobileNumber\>" and "\<ApiKey\>" values with your mobile number and the APIKEY got on step 2 in "secret.h".
+4. Replace the "\<YourWifiSsid\>" and "\<YourWifiPassword\>" in "secret.h"
 5. Build and upload the firmware in Arduino IDE.  
    If everything goes smooth, you should see the followings on the Arduino IDE Output:
 [![upload screen](/doc/image/upload.png)](https://github.com/teamprof/github-we2-doorbell/blob/main/doc/image/upload.png)
